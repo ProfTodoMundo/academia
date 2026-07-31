@@ -3,125 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Perfil académico de la Dra. María de Jesús Selene Hernández Gómez, lingüista, docente e investigadora de la Universidad Autónoma de Querétaro.">
-  <title>Dra. Selene Hernández Gómez | Perfil académico</title>
+  <meta name="description" content="Perfil académico de la Dra. María de Jesús Selene Hernández Gómez. Lingüística, documentación de lenguas otomíes y educación intercultural.">
+  <title>Dra. Selene Hernández Gómez | Impulsa Académico</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root{
-      --fondo:#f6f2ea;--superficie:#fffdf8;--tinta:#18312f;--muted:#667370;
-      --primario:#5d887f;--primario-oscuro:#355f58;--acento:#d9a441;
-      --linea:#ded8cb;--sombra:0 20px 55px rgba(53,95,88,.14);
-      --radio:26px;--ancho:1180px;
+      --fondo:#f8f7f5;--superficie:#fffefa;--superficie-suave:#f1efe9;
+      --tinta:#1f2937;--muted:#667085;--oxford:#1f4e79;--oxford-oscuro:#16324f;
+      --dorado:#b08d57;--marfil:#e9e3d8;--linea:#ded8cf;
+      --sombra:0 20px 50px rgba(22,50,79,.10);--sombra-suave:0 10px 28px rgba(31,41,55,.07);
+      --radio:22px;--ancho:1180px;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{font-family:Arial,Helvetica,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65}
-    a{text-decoration:none;color:inherit}.contenedor{width:min(calc(100% - 2rem),var(--ancho));margin:auto}
-    .barra-superior{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.94);border-bottom:1px solid var(--linea);backdrop-filter:blur(14px)}
-    .navegacion{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:2rem}
-    .marca{display:flex;align-items:center;gap:.85rem;font-weight:800}.marca-sello{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;color:white;background:linear-gradient(135deg,var(--primario),var(--primario-oscuro))}
-    .marca small{display:block;color:var(--muted);font-size:.76rem;font-weight:600}.menu{display:flex;gap:1.15rem;font-size:.9rem;font-weight:700}.menu a:hover{color:var(--primario)}
-    .boton{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem 1.25rem;border-radius:999px;background:var(--primario);color:white;font-weight:800;transition:.2s ease}.boton:hover{transform:translateY(-2px);background:var(--primario-oscuro)}
-    .hero{padding:5.5rem 0 4.5rem;overflow:hidden;position:relative}.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(217,164,65,.2),transparent 68%);right:-160px;top:-150px}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center;position:relative}.etiqueta{display:inline-flex;padding:.5rem .85rem;border-radius:999px;background:#e6efed;color:var(--primario-oscuro);font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,6.7vw,6rem);line-height:.95;margin:1.25rem 0;letter-spacing:-.055em}h1 span{color:var(--primario)}
-    .hero p{font-size:1.12rem;color:var(--muted);max-width:680px}.acciones{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}.boton-secundario{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem 1.25rem;border-radius:999px;border:1px solid var(--linea);font-weight:800;background:var(--superficie)}
-    .hero-visual{position:relative;min-height:540px}.hero-foto{position:absolute;inset:1.5rem 1rem;border-radius:34px;background:linear-gradient(145deg,var(--primario),var(--primario-oscuro));box-shadow:var(--sombra);overflow:hidden}.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(100%);mix-blend-mode:luminosity;opacity:.94}
-    .hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(13,62,58,.62));pointer-events:none}
-    .tarjeta-flotante{position:absolute;background:var(--superficie);padding:1rem 1.15rem;border-radius:18px;box-shadow:var(--sombra);max-width:230px;font-weight:800}.tarjeta-flotante.uno{left:-1rem;top:8%}.tarjeta-flotante.dos{right:-1rem;bottom:8%}.tarjeta-flotante span{display:block;color:var(--primario);font-size:.78rem;text-transform:uppercase}
-    section{padding:4.8rem 0}.seccion-clara{background:var(--superficie)}.encabezado-seccion{max-width:800px;margin-bottom:2rem}.encabezado-seccion h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.4rem);line-height:1.1;margin:.65rem 0}.encabezado-seccion p{color:var(--muted)}
-    .beneficios{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}.tarjeta{background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio);padding:1.7rem;box-shadow:0 12px 28px rgba(24,49,47,.06)}.tarjeta .numero{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:#e6efed;color:var(--primario);font-weight:900;margin-bottom:1rem}.tarjeta h3{font-size:1.18rem;margin-bottom:.55rem}.tarjeta p,.tarjeta li{color:var(--muted)}
-    .lista{list-style:none;display:grid;gap:.65rem}.lista li::before{content:"•";color:var(--acento);font-weight:900;margin-right:.6rem}
-    .perfil{display:grid;grid-template-columns:.75fr 1.25fr;gap:2rem;align-items:stretch}.perfil-dato{background:var(--primario);color:white;border-radius:var(--radio);padding:2rem;display:flex;flex-direction:column;justify-content:flex-end;min-height:360px}.perfil-dato strong{font-family:Georgia,serif;font-size:2rem}.perfil-dato p{color:rgba(255,255,255,.82)}.perfil-texto{padding:2rem}.perfil-texto p+p{margin-top:1rem}
-    .publicaciones{display:grid;gap:1rem}.pub{padding:1.25rem 1.4rem;border-left:4px solid var(--primario);background:var(--superficie);border-radius:0 18px 18px 0}.pub strong{display:block;margin-bottom:.35rem}.pub p{color:var(--muted)}
-    .cta{background:linear-gradient(135deg,var(--primario),var(--primario-oscuro));color:white;border-radius:34px;padding:3rem;text-align:center}.cta h2{font-family:Georgia,serif;font-size:clamp(2rem,4vw,3.5rem)}.cta p{max-width:680px;margin:1rem auto;color:rgba(255,255,255,.8)}.cta .boton{background:var(--acento);color:#252416}
-    footer{background:#102a28;color:white;padding:2.3rem 0}.footer-grid{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}footer p{color:rgba(255,255,255,.68);font-size:.9rem}
-    @media(max-width:980px){.menu{display:none}.hero-grid,.perfil{grid-template-columns:1fr}.hero-visual{min-height:500px}.beneficios{grid-template-columns:1fr}}
-    @media(max-width:620px){.navegacion .boton{display:none}.hero{padding-top:3.5rem}.hero-visual{min-height:420px}.tarjeta-flotante{max-width:180px;font-size:.8rem}section{padding:3.6rem 0}.cta{padding:2rem 1.2rem}}
+    body{font-family:"Inter",sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.72}
+    a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+    .contenedor{width:min(calc(100% - 2rem),var(--ancho));margin:auto}
+    h1,h2,h3,h4,.marca-nombre,.perfil-dato strong{font-family:"Cormorant Garamond",serif}
+
+    .barra-superior{position:sticky;top:0;z-index:20;background:rgba(248,247,245,.95);border-bottom:1px solid rgba(222,216,207,.85);backdrop-filter:blur(14px)}
+    .navegacion{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+    .marca{display:flex;align-items:center;gap:.9rem}.marca-sello{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:#fff;background:var(--oxford-oscuro);font-family:"Cormorant Garamond",serif;font-weight:700;font-size:1.15rem;box-shadow:0 8px 22px rgba(22,50,79,.18)}
+    .marca-nombre{font-size:1.25rem;font-weight:700;line-height:1.05;color:var(--oxford-oscuro)}.marca small{display:block;margin-top:.25rem;color:var(--muted);font-size:.72rem;font-family:"Inter",sans-serif;letter-spacing:.04em}
+    .menu{display:flex;gap:1.15rem;font-size:.83rem;font-weight:600;color:#344054}.menu a{position:relative;padding:.35rem 0}.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--dorado);transition:.2s}.menu a:hover{color:var(--oxford)}.menu a:hover::after{right:0}
+
+    .boton,.boton-secundario{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.82rem 1.35rem;border-radius:999px;font-weight:700;font-size:.92rem;transition:.2s}
+    .boton{background:var(--oxford);color:#fff;box-shadow:0 8px 22px rgba(31,78,121,.18)}.boton:hover{transform:translateY(-2px);background:var(--oxford-oscuro)}
+    .boton-secundario{border:1px solid var(--linea);background:rgba(255,254,250,.75);color:var(--oxford-oscuro)}.boton-secundario:hover{border-color:var(--dorado);background:var(--superficie)}
+
+    .hero{padding:6.4rem 0 5.2rem;position:relative;overflow:hidden}.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(176,141,87,.11),transparent 68%);right:-160px;top:-180px}.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--linea),transparent)}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:5rem;align-items:center;position:relative}.etiqueta{display:inline-flex;padding:.52rem .85rem;border-radius:999px;background:rgba(31,78,121,.07);color:var(--oxford);border:1px solid rgba(31,78,121,.10);font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.11em}
+    h1{font-size:clamp(3.6rem,7vw,6.7rem);line-height:.92;margin:1.45rem 0 1.3rem;letter-spacing:-.045em;color:var(--oxford-oscuro);font-weight:600}h1 span{color:var(--oxford)}.hero p{font-size:1.08rem;color:var(--muted);max-width:680px}.acciones{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.2rem}
+    .hero-visual{position:relative;min-height:610px}.retrato-panel{position:absolute;inset:0 1rem;border-radius:30px;background:var(--superficie-suave);border:1px solid var(--marfil);padding:1.15rem;box-shadow:var(--sombra)}.hero-foto{width:100%;height:100%;overflow:hidden;border-radius:22px;border:1px solid #e7e1d7;background:#ece8e1;box-shadow:var(--sombra-suave)}.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:saturate(.88) contrast(1.02)}
+    .tarjeta-flotante{position:absolute;background:rgba(255,254,250,.96);padding:1rem 1.15rem;border-radius:16px;border:1px solid var(--marfil);box-shadow:var(--sombra-suave);max-width:230px;font-weight:700;color:var(--oxford-oscuro)}.tarjeta-flotante.uno{left:-1rem;top:9%}.tarjeta-flotante.dos{right:-1rem;bottom:8%}.tarjeta-flotante span{display:block;color:var(--dorado);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem}
+
+    section{padding:5.4rem 0}.seccion-clara{background:var(--superficie)}.encabezado-seccion{max-width:860px;margin-bottom:2.35rem}.encabezado-seccion h2{font-size:clamp(2.5rem,4.6vw,4rem);line-height:1.02;margin:.8rem 0 .9rem;color:var(--oxford-oscuro);font-weight:600}.encabezado-seccion p{color:var(--muted)}
+    .beneficios{display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem}.tarjeta{background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio);padding:1.85rem;box-shadow:var(--sombra-suave)}.tarjeta .numero{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(31,78,121,.07);color:var(--oxford);font-weight:800;margin-bottom:1.1rem;border:1px solid rgba(31,78,121,.10)}.tarjeta h3{font-size:1.55rem;line-height:1.05;margin-bottom:.65rem;color:var(--oxford-oscuro);font-weight:600}.tarjeta p,.tarjeta li{color:var(--muted)}
+
+    .perfil{display:grid;grid-template-columns:.78fr 1.22fr;gap:1.6rem;align-items:stretch}.perfil-dato{background:var(--oxford-oscuro);color:#fff;border-radius:var(--radio);padding:2.2rem;display:flex;flex-direction:column;justify-content:flex-end;min-height:370px;box-shadow:var(--sombra)}.perfil-dato strong{font-size:2.35rem;line-height:1.05;margin-bottom:.75rem}.perfil-dato p{color:rgba(255,255,255,.76)}.perfil-texto{padding:2.25rem}.perfil-texto h2{font-size:2.7rem;color:var(--oxford-oscuro);margin:.6rem 0 1rem;line-height:1}.perfil-texto p+p{margin-top:1rem}
+
+    .subsecciones{display:grid;gap:1.35rem}.subseccion{background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio);padding:2rem;box-shadow:var(--sombra-suave)}.subseccion h3{font-size:2rem;color:var(--oxford-oscuro);margin-bottom:.45rem}.subseccion-intro{color:var(--muted);margin-bottom:1.35rem}
+    .timeline{display:grid;gap:1rem}.timeline-item{display:grid;grid-template-columns:180px 1fr;gap:1.25rem;padding:1.15rem 0;border-top:1px solid var(--linea)}.timeline-item:first-child{border-top:0}.timeline-item time{font-weight:700;color:var(--dorado)}.timeline-item h4{font-size:1.35rem;line-height:1.12;color:var(--oxford-oscuro);margin-bottom:.25rem}.timeline-item p{color:var(--muted)}
+
+    .publicaciones{display:grid;gap:1rem}.pub{padding:1.5rem 1.6rem;border:1px solid var(--linea);border-left:4px solid var(--oxford);background:var(--superficie);border-radius:0 16px 16px 0;box-shadow:0 8px 22px rgba(31,41,55,.04)}.pub .anio{display:inline-block;color:var(--dorado);font-size:.78rem;font-weight:800;letter-spacing:.08em;margin-bottom:.35rem}.pub strong{display:block;margin-bottom:.45rem;color:var(--oxford-oscuro)}.pub p{color:var(--muted)}
+
+    .idiomas-grid,.grupos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.lista-limpia{list-style:none;display:grid;gap:.7rem}.lista-limpia li{padding:.9rem 1rem;border:1px solid var(--linea);border-radius:14px;background:var(--superficie);color:var(--muted)}.lista-limpia strong{color:var(--oxford-oscuro)}
+
+    .galeria-futura{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}.placeholder{min-height:220px;border:1px dashed #bdb4a5;border-radius:18px;background:linear-gradient(145deg,#f3f0ea,#fbfaf7);display:grid;place-items:center;text-align:center;padding:1.2rem;color:var(--muted)}.placeholder strong{display:block;color:var(--oxford-oscuro);font-family:"Cormorant Garamond",serif;font-size:1.35rem;margin-bottom:.35rem}
+
+    .cta{background:var(--oxford-oscuro);color:#fff;border-radius:30px;padding:3.3rem;text-align:center;box-shadow:var(--sombra)}.cta h2{font-size:clamp(2.5rem,4.6vw,4rem);line-height:1;margin-top:.8rem}.cta p{max-width:680px;margin:1rem auto;color:rgba(255,255,255,.76)}.cta .etiqueta{background:rgba(255,255,255,.08);color:#e8d8bb;border-color:rgba(255,255,255,.12)}.cta .boton{background:var(--dorado)}.cta .boton:hover{background:#9a7848}
+    footer{background:#11283d;color:#fff;padding:2.5rem 0}.footer-grid{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}footer p{color:rgba(255,255,255,.67);font-size:.88rem}
+
+    @media(max-width:1080px){.menu{display:none}}
+    @media(max-width:980px){.hero-grid,.perfil{grid-template-columns:1fr}.hero-visual{min-height:560px;max-width:620px;width:100%;margin:0 auto}.beneficios,.idiomas-grid,.grupos-grid,.galeria-futura{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:.3rem}}
+    @media(max-width:620px){.contenedor{width:min(calc(100% - 1.25rem),var(--ancho))}.navegacion .boton{display:none}.hero{padding:4.2rem 0}h1{font-size:clamp(3.2rem,15vw,4.6rem)}.hero-visual{min-height:470px}.retrato-panel{inset:0}.tarjeta-flotante{max-width:180px;font-size:.8rem;padding:.85rem}.tarjeta-flotante.uno{left:-.2rem}.tarjeta-flotante.dos{right:-.2rem}section{padding:4rem 0}.cta{padding:2.2rem 1.25rem}}
   </style>
 </head>
 <body>
-  <header class="barra-superior">
-    <div class="contenedor navegacion">
-      <a class="marca" href="#inicio"><span class="marca-sello">SH</span><span>Dra. Selene Hernández Gómez<small>Perfil académico esencial</small></span></a>
-      <nav class="menu" aria-label="Navegación principal"><a href="#investigacion">Investigación</a><a href="#areas">Áreas</a><a href="#perfil">Perfil</a><a href="#publicaciones">Publicaciones</a></nav>
-      <a class="boton" href="#contacto">Contacto académico</a>
+<header class="barra-superior">
+  <div class="contenedor navegacion">
+    <a class="marca" href="#inicio"><span class="marca-sello">SH</span><span class="marca-nombre">Dra. Selene Hernández Gómez<small>Impulsa Académico · Perfil esencial</small></span></a>
+    <nav class="menu" aria-label="Navegación principal">
+      <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#investigacion">Investigación</a><a href="#publicaciones">Publicaciones</a><a href="#divulgacion">Divulgación</a><a href="#grupos">Grupos</a>
+    </nav>
+    <a class="boton" href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="contenedor hero-grid">
+    <div>
+      <span class="etiqueta">Lingüística · Lenguas originarias · Educación intercultural</span>
+      <h1>Documentar una lengua es preservar una forma de entender el <span>mundo.</span></h1>
+      <p>Profesora e investigadora de la Universidad Autónoma de Querétaro, especializada en lingüística descriptiva, documentación de lenguas otomíes, estudios mesoamericanos y educación intercultural.</p>
+      <div class="acciones"><a class="boton" href="#investigacion">Ver investigación</a><a class="boton-secundario" href="#publicaciones">Consultar publicaciones</a></div>
     </div>
-  </header>
+    <div class="hero-visual">
+      <div class="retrato-panel"><div class="hero-foto"><img src="img/selene-hernandez-gomez.jpg" alt="Retrato de la Dra. Selene Hernández Gómez"></div></div>
+      <div class="tarjeta-flotante uno"><span>Área principal</span>Lingüística y lenguas otomíes</div>
+      <div class="tarjeta-flotante dos"><span>Institución</span>Universidad Autónoma de Querétaro</div>
+    </div>
+  </div>
+</section>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="contenedor hero-grid">
-        <div>
-          <span class="etiqueta">Lingüística · Lenguas originarias · Educación intercultural</span>
-          <h1>Documentar una lengua es también preservar una forma de entender el <span>mundo.</span></h1>
-          <p>Lingüista, docente e investigadora de la Universidad Autónoma de Querétaro, con experiencia en documentación lingüística, estudios otomíes, educación bilingüe y mediación intercultural.</p>
-          <div class="acciones"><a class="boton" href="#investigacion">Conocer su investigación</a><a class="boton-secundario" href="#perfil">Ver trayectoria</a></div>
-        </div>
-        <div class="hero-visual" aria-label="Retrato de la Dra. Selene Hernández Gómez">
-          <div class="hero-foto"><img src="img/selene-hernandez-gomez.jpg" alt="Dra. María de Jesús Selene Hernández Gómez"></div>
-          <div class="tarjeta-flotante uno"><span>Área central</span>Documentación lingüística</div>
-          <div class="tarjeta-flotante dos"><span>Trabajo de campo</span>Lengua otomí</div>
-        </div>
-      </div>
-    </section>
+<section class="seccion-clara" id="perfil">
+  <div class="contenedor">
+    <div class="encabezado-seccion"><span class="etiqueta">Perfil académico</span><h2>Formación sólida y una trayectoria interdisciplinaria</h2><p>Su trabajo articula lingüística, estudios mesoamericanos, documentación de lenguas, docencia universitaria y mediación intercultural.</p></div>
+    <div class="perfil">
+      <div class="perfil-dato"><strong>Lingüística, documentación y educación intercultural</strong><p>Trabajo académico centrado en lenguas originarias, especialmente variedades otomíes, y en la formación de estudiantes en contextos multilingües.</p></div>
+      <article class="tarjeta perfil-texto">
+        <h2>Formación académica</h2>
+        <p><strong>Doctorado en Estudios Mesoamericanos</strong>, Facultad de Filosofía y Letras e Instituto de Investigaciones Filológicas, Universidad Nacional Autónoma de México. Becaria CONACYT, 2009–2012.</p>
+        <p><strong>Maestría en Lingüística</strong>, línea terminal en Lingüística Teórica-Descriptiva, Universidad Autónoma de Querétaro. Becaria CONACYT, 2003–2005.</p>
+        <p><strong>Licenciatura en Lenguas Modernas en Inglés</strong>, Facultad de Lenguas y Letras, Universidad Autónoma de Querétaro, 1999–2003.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="seccion-clara" id="investigacion">
-      <div class="contenedor">
-        <div class="encabezado-seccion"><span class="etiqueta">Investigación principal</span><h2>Lengua, territorio y memoria en comunidades otomíes</h2><p>Su trayectoria de investigación incluye trabajo de campo sostenido, documentación de lenguas en riesgo y colaboración en proyectos nacionales e internacionales.</p></div>
-        <div class="beneficios">
-          <article class="tarjeta"><div class="numero">01</div><h3>Documentación lingüística</h3><p>Desarrollo del proyecto “Documentation of Santa Ana Hueytlalpan Otomi”, con apoyo del Endangered Languages Documentation Programme de SOAS, Universidad de Londres.</p></article>
-          <article class="tarjeta"><div class="numero">02</div><h3>Trabajo de campo</h3><p>Investigación de la lengua otomí de Santa Ana Hueytlalpan, Tulancingo, Hidalgo, realizada entre 2009 y 2023.</p></article>
-          <article class="tarjeta"><div class="numero">03</div><h3>Lenguaje espacial</h3><p>Participación en el proyecto internacional “Spatial Language and Cognition in Mesoamerica” (MesoSpace), coordinado desde SUNY Buffalo.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="experiencia">
+  <div class="contenedor">
+    <div class="encabezado-seccion"><span class="etiqueta">Experiencia laboral</span><h2>Docencia universitaria en licenciatura, posgrado y modalidades en línea</h2><p>Trayectoria docente desarrollada principalmente en la Universidad Autónoma de Querétaro.</p></div>
+    <div class="subsecciones">
+      <article class="subseccion"><h3>Experiencia docente</h3><div class="timeline">
+        <div class="timeline-item"><time>2007–actualidad</time><div><h4>Licenciatura en Lenguas Modernas en Inglés</h4><p>Facultad de Lenguas y Letras, Universidad Autónoma de Querétaro.</p></div></div>
+        <div class="timeline-item"><time>2012–2025</time><div><h4>Maestría en Lingüística</h4><p>Facultad de Lenguas y Letras, Universidad Autónoma de Querétaro.</p></div></div>
+        <div class="timeline-item"><time>2015–actualidad</time><div><h4>Maestría en Estudios Amerindios y Educación Bilingüe</h4><p>Facultad de Filosofía, Campus Centro Histórico, UAQ.</p></div></div>
+        <div class="timeline-item"><time>2020–actualidad</time><div><h4>Licenciatura en Educación y Mediación Intercultural</h4><p>Modalidad a distancia, Facultad de Filosofía, Campus Centro Histórico, UAQ.</p></div></div>
+        <div class="timeline-item"><time>2020–2021 y 2026</time><div><h4>Técnico Universitario de Profesional Asociado en la Enseñanza de Lenguas</h4><p>Programa en línea, Facultad de Lenguas y Letras, Campus Aeropuerto.</p></div></div>
+        <div class="timeline-item"><time>2012–2022 y 2026</time><div><h4>Licenciatura en Lenguas Modernas en Español</h4><p>Facultad de Lenguas y Letras, Campus Aeropuerto.</p></div></div>
+        <div class="timeline-item"><time>2022</time><div><h4>Licenciatura en Estudios Literarios</h4><p>Facultad de Lenguas y Letras, Campus Aeropuerto.</p></div></div>
+        <div class="timeline-item"><time>2004–2007</time><div><h4>Cursos curriculares y no curriculares de inglés</h4><p>Facultad de Lenguas y Letras, Universidad Autónoma de Querétaro.</p></div></div>
+      </div></article>
+    </div>
+  </div>
+</section>
 
-    <section id="areas">
-      <div class="contenedor">
-        <div class="encabezado-seccion"><span class="etiqueta">Áreas de trabajo</span><h2>Un perfil interdisciplinario entre lingüística, educación y cultura</h2><p>La propuesta conserva la estructura visual esencial de la plantilla de Grigori Perelman y concentra el contenido en sus líneas académicas más representativas.</p></div>
-        <div class="beneficios">
-          <article class="tarjeta"><div class="numero">A</div><h3>Lingüística descriptiva</h3><p>Descripción gramatical, documentación de acervos lingüísticos y análisis de lenguas originarias.</p></article>
-          <article class="tarjeta"><div class="numero">B</div><h3>Estudios otomíes</h3><p>Conocimientos teórico-gramaticales de variantes de San Ildefonso Tultepec, Santiago Tilapa y Santa Ana Hueytlalpan.</p></article>
-          <article class="tarjeta"><div class="numero">C</div><h3>Educación intercultural</h3><p>Docencia y formación en estudios amerindios, educación bilingüe y mediación intercultural.</p></article>
-        </div>
-      </div>
-    </section>
+<section class="seccion-clara" id="investigacion">
+  <div class="contenedor">
+    <div class="encabezado-seccion"><span class="etiqueta">Experiencia en investigación</span><h2>Documentación lingüística, trabajo de campo y colaboración internacional</h2><p>Su investigación se ha desarrollado en proyectos institucionales, estancias académicas y trabajo sostenido con comunidades otomíes.</p></div>
+    <div class="beneficios">
+      <article class="tarjeta"><div class="numero">01</div><h3>LEMI y LANMO</h3><p>Investigadora asociada del Laboratorio de Educación y Mediación Intercultural de la UAQ, asociado al Laboratorio Nacional de Materiales Orales, ENES Morelia y UNAM, desde 2024.</p></article>
+      <article class="tarjeta"><div class="numero">02</div><h3>Documentación del otomí</h3><p>Becaria del Endangered Languages Documentation Programme de SOAS, Universidad de Londres, para el proyecto de documentación del otomí de Santa Ana Hueytlalpan, 2009–2011.</p></article>
+      <article class="tarjeta"><div class="numero">03</div><h3>Trabajo de campo</h3><p>Trabajo de campo e investigación de la lengua otomí de Santa Ana Hueytlalpan, Tulancingo, Hidalgo, entre 2009 y 2023.</p></article>
+      <article class="tarjeta"><div class="numero">04</div><h3>MesóSpace</h3><p>Participante-investigadora del proyecto “Spatial Language and Cognition in Mesoamerica”, coordinado desde SUNY Buffalo y financiado por la National Science Foundation, 2009–2014.</p></article>
+      <article class="tarjeta"><div class="numero">05</div><h3>Estancia académica</h3><p>Becaria del programa Santander Universities para una estancia académica en la Universidad de Surrey, Guildford, Reino Unido, durante junio y julio de 2014.</p></article>
+    </div>
+  </div>
+</section>
 
-    <section class="seccion-clara" id="perfil">
-      <div class="contenedor perfil">
-        <div class="perfil-dato"><strong>María de Jesús Selene Hernández Gómez</strong><p>Doctora en Estudios Mesoamericanos</p><p>Universidad Autónoma de Querétaro</p></div>
-        <article class="tarjeta perfil-texto"><span class="etiqueta">Formación y docencia</span><h2>Trayectoria académica</h2><p>Es doctora en Estudios Mesoamericanos por la Universidad Nacional Autónoma de México, maestra en Lingüística con orientación teórico-descriptiva y licenciada en Lenguas Modernas en Inglés por la Universidad Autónoma de Querétaro.</p><p>Desde 2007 participa como docente en la Licenciatura en Lenguas Modernas en Inglés de la UAQ. También ha impartido cursos en programas de lingüística, estudios amerindios, educación bilingüe, educación y mediación intercultural, lenguas modernas en español y estudios literarios.</p></article>
-      </div>
-    </section>
+<section id="publicaciones">
+  <div class="contenedor">
+    <div class="encabezado-seccion"><span class="etiqueta">Publicaciones</span><h2>Producción académica seleccionada</h2><p>Referencias presentadas en extenso, respetando la información incluida en el currículum resumido.</p></div>
+    <div class="publicaciones">
+      <article class="pub"><span class="anio">2026</span><strong>Acuña Murillo, Karina Monserrat, Luz María Lepe Lira y María de Jesús Selene Hernández Gómez.</strong><p>“Xtabay habla: una propuesta de lectura crítica desde la interseccionalidad a la obra de Briceida Cuevas Cob”. <em>Diseminaciones</em>, vol. 9, núm. 17. DOI: 10.61820/dis.2683-3298.1986.</p></article>
+      <article class="pub"><span class="anio">2023</span><strong>Hernández Gómez, María de Jesús Selene.</strong><p>“Tutoría en otro idioma: reflexiones desde y para un contexto multicultural y multilingüe”. En <em>Las Tutorías como elemento articulador del Modelo Educativo Universitario</em>. Comité Institucional de Tutorías, SUPAUAQ, Universidad Autónoma de Querétaro.</p></article>
+      <article class="pub"><span class="anio">2017</span><strong>Hernández Gómez, María de Jesús Selene.</strong><p>“Acervos lingüísticos: características básicas”. En Montaño Ramírez, Cynthia Araceli (coord.), <em>¿Qué hacer para registrar y preservar una lengua? Aproximaciones a la documentación lingüística</em>. Colección Academia. México: Ediciones del Lirio y Universidad Autónoma de Querétaro, pp. 175–185.</p></article>
+      <article class="pub"><span class="anio">2011</span><strong>Hernández-Green, Néstor, Enrique Palancar y Selene Hernández-Gómez.</strong><p>“The Spanish loanword <em>lado</em> in Otomi spatial descriptions”. <em>Language Sciences</em>, vol. 33, núm. 6, Elsevier, pp. 961–980.</p></article>
+      <article class="pub"><span class="anio">2011</span><strong>Bohnemeyer, Jürgen, Elena Benedicto, Alejandra Capistrán Garza, Katharine T. Donelson, Alyson Eggleston, Néstor Hernández Green, María de Jesús Selene Hernández Gómez, Jesse S. Lovegren, Carolyn K. O’Meara, Enrique Palancar, Gabriela Pérez Báez, Gilles Polian, Rodrigo Romero Méndez y Randi E. Tucker.</strong><p>“Marcos de Referencia en lenguas mesoamericanas: un análisis multivariante tipológico”. <em>Memorias del V Congreso de Idiomas Indígenas de Latinoamérica</em>, 6–8 de octubre de 2011, Universidad de Texas en Austin.</p></article>
+    </div>
+  </div>
+</section>
 
-    <section id="docencia">
-      <div class="contenedor">
-        <div class="encabezado-seccion"><span class="etiqueta">Docencia y formación</span><h2>Experiencia en programas universitarios</h2></div>
-        <div class="beneficios">
-          <article class="tarjeta"><div class="numero">01</div><h3>Lenguas Modernas</h3><ul class="lista"><li>Licenciatura en Lenguas Modernas en Inglés</li><li>Licenciatura en Lenguas Modernas en Español</li><li>Enseñanza de lenguas en modalidad en línea</li></ul></article>
-          <article class="tarjeta"><div class="numero">02</div><h3>Posgrado</h3><ul class="lista"><li>Maestría en Lingüística</li><li>Maestría en Estudios Amerindios y Educación Bilingüe</li><li>Dirección y asesoría de tesis</li></ul></article>
-          <article class="tarjeta"><div class="numero">03</div><h3>Interculturalidad</h3><ul class="lista"><li>Educación y Mediación Intercultural</li><li>Formación bilingüe</li><li>Tutoría en contextos multiculturales y multilingües</li></ul></article>
-        </div>
-      </div>
-    </section>
+<section class="seccion-clara" id="idiomas">
+  <div class="contenedor">
+    <div class="encabezado-seccion"><span class="etiqueta">Idiomas</span><h2>Competencias lingüísticas y conocimiento de variedades otomíes</h2></div>
+    <div class="idiomas-grid">
+      <article class="subseccion"><h3>Idiomas</h3><ul class="lista-limpia"><li><strong>Inglés:</strong> nivel C1.</li><li><strong>Alemán:</strong> nivel principiante.</li><li><strong>Francés:</strong> nivel principiante.</li><li><strong>Italiano:</strong> comprensión de textos.</li></ul></article>
+      <article class="subseccion"><h3>Conocimientos teórico-gramaticales</h3><ul class="lista-limpia"><li>Otomí de San Ildefonso Tultepec, Amealco, Querétaro.</li><li>Otomí de Santiago Tilapa, Santiago Tianguistenco, Estado de México.</li><li>Otomí de Santa Ana Hueytlalpan, Tulancingo, Hidalgo.</li></ul></article>
+    </div>
+  </div>
+</section>
 
-    <section class="seccion-clara" id="publicaciones">
-      <div class="contenedor">
-        <div class="encabezado-seccion"><span class="etiqueta">Publicaciones seleccionadas</span><h2>Producción académica</h2><p>Selección inicial tomada del currículum resumido proporcionado para esta propuesta.</p></div>
-        <div class="publicaciones">
-          <article class="pub"><strong>“Xtabay habla: una propuesta de lectura crítica desde la interseccionalidad a la obra de Briceida Cuevas Cob” (2026)</strong><p>Coautoría con Karina Monserrat Acuña Murillo y Luz María Lepe Lira. <em>Diseminaciones</em>, vol. 9, núm. 17.</p></article>
-          <article class="pub"><strong>“Tutoría en otro idioma: reflexiones desde y para un contexto multicultural y multilingüe” (2023)</strong><p>Capítulo incluido en <em>Las Tutorías como elemento articulador del Modelo Educativo Universitario</em>, UAQ.</p></article>
-          <article class="pub"><strong>“Acervos lingüísticos: características básicas” (2017)</strong><p>Capítulo en <em>¿Qué hacer para registrar y preservar una lengua? Aproximaciones a la documentación lingüística</em>.</p></article>
-          <article class="pub"><strong>“The Spanish loanword lado in Otomi spatial descriptions” (2011)</strong><p>Con Néstor Hernández-Green y Enrique Palancar. <em>Language Sciences</em>, vol. 33, núm. 6.</p></article>
-        </div>
-      </div>
-    </section>
+<section id="divulgacion">
+  <div class="contenedor">
+    <div class="encabezado-seccion"><span class="etiqueta">Divulgación académica</span><h2>Dirección y asesoría de tesis</h2><p>Formación de recursos humanos en lingüística, traducción, estudios amerindios, educación bilingüe y cultura.</p></div>
+    <div class="subseccion"><div class="timeline">
+      <div class="timeline-item"><time>2025–en proceso</time><div><h4>Jerson David Hernández Cibrián</h4><p>Dirección de tesis de maestría, Maestría en Didáctica de Lenguas y Culturas, Universidad Nacional Autónoma de Honduras.</p></div></div>
+      <div class="timeline-item"><time>2025–en proceso</time><div><h4>David Medina Munguía</h4><p>Dirección de tesis de licenciatura, Licenciatura en Lenguas Modernas en Inglés, UAQ.</p></div></div>
+      <div class="timeline-item"><time>2023</time><div><h4>Juan Manuel Cárdenas Díaz</h4><p>“Rezar en otomí: una aproximación al estudio de la adaptación y traducción de términos religiosos en el catecismo bilingüe otomí-español de Francisco Pérez del siglo XIX”. Maestría en Lingüística, UAQ. Aprobada por unanimidad y mención honorífica.</p></div></div>
+      <div class="timeline-item"><time>2021</time><div><h4>Andrea Ortega Mancilla y María Fernanda Vázquez Hernández</h4><p>“Una propuesta de traducción cultural del inglés estadounidense al español mexicano de la obra <em>Zeus Grants Stupid Wishes</em> de Cory O’Brien”. Licenciatura en Lenguas Modernas–Inglés, UAQ. Aprobada por unanimidad con mención honorífica.</p></div></div>
+      <div class="timeline-item"><time>2021</time><div><h4>Karina Monserrat Acuña Murillo</h4><p>“Mujer con ropaje nube de tormenta: la construcción estética de la intersección entre género y etnia en la obra de Irma Pineda y Briceida Cuevas Cob”. Maestría en Estudios Amerindios y Educación Bilingüe, UAQ. Codirección con la Dra. Luz María Lepe Lira. Premio a la Mejor Tesis en Humanidades 2021, categoría Maestría.</p></div></div>
+      <div class="timeline-item"><time>2019</time><div><h4>Miriam Martínez Benítez</h4><p>“Morfosintaxis nominal en el otomí de Pueblo Nuevo (Acambay, Estado de México)”. Maestría en Estudios Amerindios y Educación Bilingüe, UAQ.</p></div></div>
+      <div class="timeline-item"><time>2019</time><div><h4>José Manuel Hernández Fuentes</h4><p>“Análisis de la toponimia triqui de Chicahuaxtla”. Codirección con el Dr. Jorge Alberto Tapia Ortiz. Maestría en Estudios Amerindios y Educación Bilingüe, UAQ. Aprobada por unanimidad.</p></div></div>
+    </div></div>
+    <div class="galeria-futura">
+      <div class="placeholder"><div><strong>Congresos</strong>Espacio reservado para fotografías y memorias de participación académica.</div></div>
+      <div class="placeholder"><div><strong>Trabajo de campo</strong>Espacio reservado para imágenes de documentación lingüística y colaboración comunitaria.</div></div>
+      <div class="placeholder"><div><strong>Formación de estudiantes</strong>Espacio reservado para defensas de tesis, seminarios y actividades de tutoría.</div></div>
+    </div>
+  </div>
+</section>
 
-    <section id="contacto">
-      <div class="contenedor"><div class="cta"><span class="etiqueta">Contacto institucional</span><h2>Universidad Autónoma de Querétaro</h2><p>Para asuntos académicos, colaboración e investigación:</p><p><strong>selene.hernandez@uaq.edu.mx</strong><br><strong>selene.hernandez@uaq.mx</strong></p><a class="boton" href="mailto:selene.hernandez@uaq.edu.mx">Enviar correo</a></div></div>
-    </section>
-  </main>
+<section class="seccion-clara" id="grupos">
+  <div class="contenedor">
+    <div class="encabezado-seccion"><span class="etiqueta">Participación académica</span><h2>Redes, comisiones y núcleos académicos</h2><p>Participación activa en espacios de investigación, evaluación institucional y formación de posgrado.</p></div>
+    <div class="grupos-grid">
+      <ul class="lista-limpia"><li><strong>Red Iberoamericana de Estudios sobre Materiales Orales</strong><br>Laboratorio Nacional de Materiales Orales, ENES Morelia, UNAM.</li><li><strong>Comisión de Evaluación Internacional</strong><br>Facultad de Filosofía, Universidad Autónoma de Querétaro.</li><li><strong>Colegio de Profesores</strong><br>Licenciatura en Educación y Mediación Intercultural, Facultad de Filosofía, UAQ.</li></ul>
+      <ul class="lista-limpia"><li><strong>Núcleo Académico</strong><br>Maestría en Estudios Amerindios y Educación Bilingüe, Facultad de Filosofía, UAQ.</li><li><strong>Núcleo Académico Básico</strong><br>Maestría en Lingüística, Facultad de Lenguas y Letras, UAQ.</li><li><strong>Galería de grupos de investigación</strong><br>Se incorporarán fotografías, integrantes, proyectos y vínculos institucionales en una fase posterior.</li></ul>
+    </div>
+    <div class="galeria-futura">
+      <div class="placeholder"><div><strong>Grupo de investigación</strong>Fotografía institucional por incorporar.</div></div>
+      <div class="placeholder"><div><strong>Redes académicas</strong>Fotografías de encuentros y colaboración por incorporar.</div></div>
+      <div class="placeholder"><div><strong>Seminarios y congresos</strong>Galería documental por incorporar.</div></div>
+    </div>
+  </div>
+</section>
 
-  <footer><div class="contenedor footer-grid"><div><strong>Dra. Selene Hernández Gómez</strong><p>Perfil académico elaborado a partir del CV resumido proporcionado.</p></div><div><strong>Impulsa Académico</strong><p>Una iniciativa de Analítica Aplicada.</p></div></div></footer>
+<section id="contacto">
+  <div class="contenedor"><div class="cta"><span class="etiqueta">Contacto académico</span><h2>Universidad Autónoma de Querétaro</h2><p>Para asuntos académicos, docencia, investigación y colaboración institucional.</p><div class="acciones" style="justify-content:center"><a class="boton" href="mailto:selene.hernandez@uaq.edu.mx">selene.hernandez@uaq.edu.mx</a><a class="boton-secundario" style="color:#fff;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.05)" href="mailto:selene.hernandez@uaq.mx">selene.hernandez@uaq.mx</a></div></div></div>
+</section>
+</main>
+
+<footer><div class="contenedor footer-grid"><div><strong>Dra. María de Jesús Selene Hernández Gómez</strong><p>Perfil académico digital</p></div><div><strong>Impulsa Académico</strong><p>Una iniciativa de Analítica Aplicada · 2026</p></div></div></footer>
 </body>
 </html>
