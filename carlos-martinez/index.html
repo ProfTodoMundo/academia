@@ -1,45 +1,940 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Perfil académico de Carlos Ernesto Martínez Rodríguez: probabilidad, estadística, procesos estocásticos, modelación matemática y analítica aplicada.">
-<title>Carlos Ernesto Martínez Rodríguez | Impulsa Académico</title>
-<!-- Favicon -->
-<link rel="icon" href="faviconCarlosM.png" type="image/png">
-<link rel="shortcut icon" href="faviconCarlosM.png" type="image/png">
-<link rel="apple-touch-icon" href="faviconCarlosM.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--fondo:#f8f7f5;--superficie:#fffefa;--suave:#f1efe9;--tinta:#1f2937;--muted:#667085;--oxford:#1f4e79;--oscuro:#16324f;--dorado:#b08d57;--marfil:#e9e3d8;--linea:#ded8cf;--radio:22px;--ancho:1180px;--sombra:0 20px 50px rgba(22,50,79,.10);--sombra-suave:0 10px 28px rgba(31,41,55,.07)}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.72}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.contenedor{width:min(calc(100% - 2rem),var(--ancho));margin:auto}h1,h2,h3,h4,.marca-nombre{font-family:"Cormorant Garamond",serif}.barra{position:sticky;top:0;z-index:30;background:rgba(248,247,245,.95);border-bottom:1px solid var(--linea);backdrop-filter:blur(14px)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}.marca{display:flex;align-items:center;gap:.9rem}.sello{width:49px;height:49px;border-radius:14px;display:grid;place-items:center;background:var(--oscuro);color:white;font-family:"Cormorant Garamond",serif;font-size:1.16rem;font-weight:700}.marca-nombre{font-size:1.24rem;font-weight:700;color:var(--oscuro);line-height:1}.marca small{display:block;margin-top:.28rem;color:var(--muted);font-size:.72rem;font-family:Inter,sans-serif}.menu{display:flex;gap:1rem;font-size:.79rem;font-weight:650;color:#344054}.menu a:hover{color:var(--oxford)}.btn,.btn-sec,.btn-card{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:700;transition:.2s}.btn{min-height:48px;padding:.82rem 1.35rem;background:var(--oxford);color:#fff;box-shadow:0 8px 22px rgba(31,78,121,.18)}.btn:hover,.btn-card:hover{transform:translateY(-2px);background:var(--oscuro)}.btn-sec{min-height:48px;padding:.82rem 1.35rem;border:1px solid var(--linea);background:var(--superficie);color:var(--oscuro)}
-.hero{padding:6rem 0 5rem;overflow:hidden;position:relative}.hero:before{content:"";position:absolute;width:540px;height:540px;border-radius:50%;background:radial-gradient(circle,rgba(176,141,87,.12),transparent 68%);right:-180px;top:-210px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:5rem;align-items:center;position:relative}.tag{display:inline-flex;padding:.52rem .85rem;border-radius:999px;background:rgba(31,78,121,.07);color:var(--oxford);border:1px solid rgba(31,78,121,.1);font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.11em}h1{font-size:clamp(3.7rem,7vw,6.5rem);line-height:.91;margin:1.35rem 0;letter-spacing:-.045em;color:var(--oscuro);font-weight:600}h1 span{color:var(--oxford)}.hero p{font-size:1.08rem;color:var(--muted);max-width:680px}.acciones{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.1rem}.hero-visual{position:relative;min-height:610px}.retrato-panel{position:absolute;inset:0 1rem;border-radius:30px;background:var(--suave);border:1px solid var(--marfil);padding:1.15rem;box-shadow:var(--sombra)}.foto{width:100%;height:100%;overflow:hidden;border-radius:22px;border:1px solid #e7e1d7;background:#ece8e1;box-shadow:var(--sombra-suave)}.foto img{width:100%;height:100%;object-fit:cover;object-position:center top}.flotante{position:absolute;background:rgba(255,254,250,.96);padding:1rem 1.15rem;border-radius:16px;border:1px solid var(--marfil);box-shadow:var(--sombra-suave);max-width:235px;font-weight:700;color:var(--oscuro)}.flotante span{display:block;color:var(--dorado);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}.flotante.uno{left:-1rem;top:9%}.flotante.dos{right:-1rem;bottom:8%}
-section{padding:5.2rem 0}.clara{background:var(--superficie)}.oscura{background:var(--oscuro);color:white}.encabezado{max-width:860px;margin-bottom:2.3rem}.encabezado h2{font-size:clamp(2.5rem,4.6vw,4rem);line-height:1.02;margin:.8rem 0;color:var(--oscuro);font-weight:600}.oscura .encabezado h2{color:white}.encabezado p{color:var(--muted)}.oscura .encabezado p{color:rgba(255,255,255,.72)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}.card{background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio);padding:1.8rem;box-shadow:var(--sombra-suave)}.card h3{font-size:1.55rem;line-height:1.08;color:var(--oscuro);margin:.55rem 0}.card p,.card li{color:var(--muted)}.numero{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(31,78,121,.07);color:var(--oxford);font-weight:800}.timeline{display:grid;gap:1rem}.item{display:grid;grid-template-columns:190px 1fr;gap:1.2rem;padding:1.1rem 0;border-top:1px solid var(--linea)}.item:first-child{border-top:0}.item time{font-weight:750;color:var(--dorado)}.item h4{font-size:1.35rem;color:var(--oscuro);line-height:1.15}.item p{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:.7rem}.chip{padding:.75rem 1rem;border:1px solid var(--linea);border-radius:999px;background:var(--superficie);color:var(--oscuro);font-weight:650}.lista{list-style:none;display:grid;gap:.7rem}.lista li{padding:.92rem 1rem;border:1px solid var(--linea);border-radius:14px;background:var(--superficie);color:var(--muted)}.lista strong{color:var(--oscuro)}
-.course-card{display:flex;flex-direction:column}.course-badge{display:inline-flex;align-self:flex-start;padding:.42rem .7rem;border-radius:999px;background:rgba(176,141,87,.13);color:#8d6a38;font-size:.72rem;font-weight:800;letter-spacing:.04em}.course-card p{flex:1}.course-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}.btn-card{padding:.68rem 1rem;background:var(--oxford);color:white;font-size:.82rem}.btn-card.secondary{background:transparent;border:1px solid var(--linea);color:var(--oscuro)}.btn-card.secondary:hover{border-color:var(--dorado);background:var(--suave)}.oscura .card{background:#1e4162;border-color:rgba(255,255,255,.13);box-shadow:none}.oscura .card h3{color:white}.oscura .card p{color:rgba(255,255,255,.72)}.oscura .course-badge{background:rgba(232,216,187,.12);color:#ead8b5}.oscura .btn-card{background:var(--dorado)}.oscura .btn-card:hover{background:#9a7848}.research-links{justify-content:center;margin-top:2rem}.btn-card.light{color:white;border-color:rgba(255,255,255,.28)}
-.cta{background:var(--oscuro);color:white;border-radius:30px;padding:3.2rem;text-align:center;box-shadow:var(--sombra)}.cta h2{font-size:clamp(2.5rem,4.5vw,4rem);line-height:1}.cta p{color:rgba(255,255,255,.72);max-width:720px;margin:1rem auto}.cta .acciones{justify-content:center}.cta .btn-sec{color:white;border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.04)}footer{background:#11283d;color:white;padding:2.5rem 0}.footer-grid{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}footer p{color:rgba(255,255,255,.66);font-size:.88rem}
-@media(max-width:1100px){.menu{display:none}}@media(max-width:980px){.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:560px;max-width:620px;width:100%;margin:auto}.grid3,.grid2{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:.3rem}}@media(max-width:620px){.foto img{object-position:center top;}.contenedor{width:min(calc(100% - 1.25rem),var(--ancho))}.nav>.btn{display:none}.hero{padding:4rem 0}h1{font-size:clamp(3rem,15vw,4.5rem)}.hero-visual{min-height:470px}.retrato-panel{inset:0}.flotante{max-width:180px;font-size:.8rem;padding:.8rem}.flotante.uno{left:-.2rem}.flotante.dos{right:-.2rem}section{padding:3.8rem 0}.cta{padding:2.2rem 1.2rem}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Perfil académico de Carlos Ernesto Martínez Rodríguez: probabilidad, estadística, procesos estocásticos, modelación matemática y analítica aplicada.">
+    <title>Carlos Ernesto Martínez Rodríguez</title>
+    <!-- Favicon -->
+    <link rel="icon" href="faviconCarlosM.png" type="image/png">
+    <link rel="shortcut icon" href="faviconCarlosM.png" type="image/png">
+    <link rel="apple-touch-icon" href="faviconCarlosM.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --fondo: #f8f7f5;
+            --superficie: #fffefa;
+            --suave: #f1efe9;
+            --tinta: #1f2937;
+            --muted: #667085;
+            --oxford: #1f4e79;
+            --oscuro: #16324f;
+            --dorado: #b08d57;
+            --marfil: #e9e3d8;
+            --linea: #ded8cf;
+            --radio: 22px;
+            --ancho: 1180px;
+            --sombra: 0 20px 50px rgba(22, 50, 79, .10);
+            --sombra-suave: 0 10px 28px rgba(31, 41, 55, .07)
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: Inter, sans-serif;
+            color: var(--tinta);
+            background: var(--fondo);
+            line-height: 1.72
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        img {
+            display: block;
+            max-width: 100%
+        }
+
+        .contenedor {
+            width: min(calc(100% - 2rem), var(--ancho));
+            margin: auto
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .marca-nombre {
+            font-family: "Cormorant Garamond", serif
+        }
+
+        .barra {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            background: rgba(248, 247, 245, .95);
+            border-bottom: 1px solid var(--linea);
+            backdrop-filter: blur(14px)
+        }
+
+        .nav {
+            min-height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem
+        }
+
+        .marca {
+            display: flex;
+            align-items: center;
+            gap: .9rem
+        }
+
+        .sello {
+            width: 49px;
+            height: 49px;
+            border-radius: 14px;
+            display: grid;
+            place-items: center;
+            background: var(--oscuro);
+            color: white;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.16rem;
+            font-weight: 700
+        }
+
+        .marca-nombre {
+            font-size: 1.24rem;
+            font-weight: 700;
+            color: var(--oscuro);
+            line-height: 1
+        }
+
+        .marca small {
+            display: block;
+            margin-top: .28rem;
+            color: var(--muted);
+            font-size: .72rem;
+            font-family: Inter, sans-serif
+        }
+
+        .menu {
+            display: flex;
+            gap: 1rem;
+            font-size: .79rem;
+            font-weight: 650;
+            color: #344054
+        }
+
+        .menu a:hover {
+            color: var(--oxford)
+        }
+
+        .btn,
+        .btn-sec,
+        .btn-card {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: .2s
+        }
+
+        .btn {
+            min-height: 48px;
+            padding: .82rem 1.35rem;
+            background: var(--oxford);
+            color: #fff;
+            box-shadow: 0 8px 22px rgba(31, 78, 121, .18)
+        }
+
+        .btn:hover,
+        .btn-card:hover {
+            transform: translateY(-2px);
+            background: var(--oscuro)
+        }
+
+        .btn-sec {
+            min-height: 48px;
+            padding: .82rem 1.35rem;
+            border: 1px solid var(--linea);
+            background: var(--superficie);
+            color: var(--oscuro)
+        }
+
+        .hero {
+            padding: 6rem 0 5rem;
+            overflow: hidden;
+            position: relative
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            width: 540px;
+            height: 540px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(176, 141, 87, .12), transparent 68%);
+            right: -180px;
+            top: -210px
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.08fr .92fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative
+        }
+
+        .tag {
+            display: inline-flex;
+            padding: .52rem .85rem;
+            border-radius: 999px;
+            background: rgba(31, 78, 121, .07);
+            color: var(--oxford);
+            border: 1px solid rgba(31, 78, 121, .1);
+            font-size: .73rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .11em
+        }
+
+        h1 {
+            font-size: clamp(3.7rem, 7vw, 6.5rem);
+            line-height: .91;
+            margin: 1.35rem 0;
+            letter-spacing: -.045em;
+            color: var(--oscuro);
+            font-weight: 600
+        }
+
+        h1 span {
+            color: var(--oxford)
+        }
+
+        .hero p {
+            font-size: 1.08rem;
+            color: var(--muted);
+            max-width: 680px
+        }
+
+        .acciones {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2.1rem
+        }
+
+        .hero-visual {
+            position: relative;
+            min-height: 610px
+        }
+
+        .retrato-panel {
+            position: absolute;
+            inset: 0 1rem;
+            border-radius: 30px;
+            background: var(--suave);
+            border: 1px solid var(--marfil);
+            padding: 1.15rem;
+            box-shadow: var(--sombra)
+        }
+
+        .foto {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 22px;
+            border: 1px solid #e7e1d7;
+            background: #ece8e1;
+            box-shadow: var(--sombra-suave)
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top
+        }
+
+        .flotante {
+            position: absolute;
+            background: rgba(255, 254, 250, .96);
+            padding: 1rem 1.15rem;
+            border-radius: 16px;
+            border: 1px solid var(--marfil);
+            box-shadow: var(--sombra-suave);
+            max-width: 235px;
+            font-weight: 700;
+            color: var(--oscuro)
+        }
+
+        .flotante span {
+            display: block;
+            color: var(--dorado);
+            font-size: .72rem;
+            text-transform: uppercase;
+            letter-spacing: .08em
+        }
+
+        .flotante.uno {
+            left: -1rem;
+            top: 9%
+        }
+
+        .flotante.dos {
+            right: -1rem;
+            bottom: 8%
+        }
+
+        section {
+            padding: 5.2rem 0
+        }
+
+        .clara {
+            background: var(--superficie)
+        }
+
+        .oscura {
+            background: var(--oscuro);
+            color: white
+        }
+
+        .encabezado {
+            max-width: 860px;
+            margin-bottom: 2.3rem
+        }
+
+        .encabezado h2 {
+            font-size: clamp(2.5rem, 4.6vw, 4rem);
+            line-height: 1.02;
+            margin: .8rem 0;
+            color: var(--oscuro);
+            font-weight: 600
+        }
+
+        .oscura .encabezado h2 {
+            color: white
+        }
+
+        .encabezado p {
+            color: var(--muted)
+        }
+
+        .oscura .encabezado p {
+            color: rgba(255, 255, 255, .72)
+        }
+
+        .grid3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem
+        }
+
+        .card {
+            background: var(--superficie);
+            border: 1px solid var(--linea);
+            border-radius: var(--radio);
+            padding: 1.8rem;
+            box-shadow: var(--sombra-suave)
+        }
+
+        .card h3 {
+            font-size: 1.55rem;
+            line-height: 1.08;
+            color: var(--oscuro);
+            margin: .55rem 0
+        }
+
+        .card p,
+        .card li {
+            color: var(--muted)
+        }
+
+        .numero {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            background: rgba(31, 78, 121, .07);
+            color: var(--oxford);
+            font-weight: 800
+        }
+
+        .timeline {
+            display: grid;
+            gap: 1rem
+        }
+
+        .item {
+            display: grid;
+            grid-template-columns: 190px 1fr;
+            gap: 1.2rem;
+            padding: 1.1rem 0;
+            border-top: 1px solid var(--linea)
+        }
+
+        .item:first-child {
+            border-top: 0
+        }
+
+        .item time {
+            font-weight: 750;
+            color: var(--dorado)
+        }
+
+        .item h4 {
+            font-size: 1.35rem;
+            color: var(--oscuro);
+            line-height: 1.15
+        }
+
+        .item p {
+            color: var(--muted)
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .7rem
+        }
+
+        .chip {
+            padding: .75rem 1rem;
+            border: 1px solid var(--linea);
+            border-radius: 999px;
+            background: var(--superficie);
+            color: var(--oscuro);
+            font-weight: 650
+        }
+
+        .lista {
+            list-style: none;
+            display: grid;
+            gap: .7rem
+        }
+
+        .lista li {
+            padding: .92rem 1rem;
+            border: 1px solid var(--linea);
+            border-radius: 14px;
+            background: var(--superficie);
+            color: var(--muted)
+        }
+
+        .lista strong {
+            color: var(--oscuro)
+        }
+
+        .course-card {
+            display: flex;
+            flex-direction: column
+        }
+
+        .course-badge {
+            display: inline-flex;
+            align-self: flex-start;
+            padding: .42rem .7rem;
+            border-radius: 999px;
+            background: rgba(176, 141, 87, .13);
+            color: #8d6a38;
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .04em
+        }
+
+        .course-card p {
+            flex: 1
+        }
+
+        .course-actions {
+            display: flex;
+            gap: .7rem;
+            flex-wrap: wrap;
+            margin-top: 1.2rem
+        }
+
+        .btn-card {
+            padding: .68rem 1rem;
+            background: var(--oxford);
+            color: white;
+            font-size: .82rem
+        }
+
+        .btn-card.secondary {
+            background: transparent;
+            border: 1px solid var(--linea);
+            color: var(--oscuro)
+        }
+
+        .btn-card.secondary:hover {
+            border-color: var(--dorado);
+            background: var(--suave)
+        }
+
+        .oscura .card {
+            background: #1e4162;
+            border-color: rgba(255, 255, 255, .13);
+            box-shadow: none
+        }
+
+        .oscura .card h3 {
+            color: white
+        }
+
+        .oscura .card p {
+            color: rgba(255, 255, 255, .72)
+        }
+
+        .oscura .course-badge {
+            background: rgba(232, 216, 187, .12);
+            color: #ead8b5
+        }
+
+        .oscura .btn-card {
+            background: var(--dorado)
+        }
+
+        .oscura .btn-card:hover {
+            background: #9a7848
+        }
+
+        .research-links {
+            justify-content: center;
+            margin-top: 2rem
+        }
+
+        .btn-card.light {
+            color: white;
+            border-color: rgba(255, 255, 255, .28)
+        }
+
+        .cta {
+            background: var(--oscuro);
+            color: white;
+            border-radius: 30px;
+            padding: 3.2rem;
+            text-align: center;
+            box-shadow: var(--sombra)
+        }
+
+        .cta h2 {
+            font-size: clamp(2.5rem, 4.5vw, 4rem);
+            line-height: 1
+        }
+
+        .cta p {
+            color: rgba(255, 255, 255, .72);
+            max-width: 720px;
+            margin: 1rem auto
+        }
+
+        .cta .acciones {
+            justify-content: center
+        }
+
+        .cta .btn-sec {
+            color: white;
+            border-color: rgba(255, 255, 255, .25);
+            background: rgba(255, 255, 255, .04)
+        }
+
+        footer {
+            background: #11283d;
+            color: white;
+            padding: 2.5rem 0
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, .66);
+            font-size: .88rem
+        }
+
+        @media(max-width:1100px) {
+            .menu {
+                display: none
+            }
+        }
+
+        @media(max-width:980px) {
+            .hero-grid {
+                grid-template-columns: 1fr
+            }
+
+            .hero-visual {
+                min-height: 560px;
+                max-width: 620px;
+                width: 100%;
+                margin: auto
+            }
+
+            .grid3,
+            .grid2 {
+                grid-template-columns: 1fr
+            }
+
+            .item {
+                grid-template-columns: 1fr;
+                gap: .3rem
+            }
+        }
+
+        @media(max-width:620px) {
+            .foto img {
+                object-position: center top;
+            }
+
+            .contenedor {
+                width: min(calc(100% - 1.25rem), var(--ancho))
+            }
+
+            .nav>.btn {
+                display: none
+            }
+
+            .hero {
+                padding: 4rem 0
+            }
+
+            h1 {
+                font-size: clamp(3rem, 15vw, 4.5rem)
+            }
+
+            .hero-visual {
+                min-height: 470px
+            }
+
+            .retrato-panel {
+                inset: 0
+            }
+
+            .flotante {
+                max-width: 180px;
+                font-size: .8rem;
+                padding: .8rem
+            }
+
+            .flotante.uno {
+                left: -.2rem
+            }
+
+            .flotante.dos {
+                right: -.2rem
+            }
+
+            section {
+                padding: 3.8rem 0
+            }
+
+            .cta {
+                padding: 2.2rem 1.2rem
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header class="barra"><div class="contenedor nav"><a class="marca" href="#inicio"><span class="sello">CM</span><span><span class="marca-nombre">Carlos Ernesto Martínez Rodríguez</span><small>Impulsa Académico · Perfil esencial</small></span></a><nav class="menu"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#docencia">Docencia</a><a href="#libro">Libro</a><a href="#investigacion">Investigación</a><a href="#contacto">Contacto</a></nav><a class="btn" href="#contacto">Contacto</a></div></header>
-<main>
-<section class="hero" id="inicio"><div class="contenedor hero-grid"><div><span class="tag">Probabilidad · Estadística · Modelación matemática</span><h1>Carlos Ernesto <span>Martínez Rodríguez</span></h1><p>Profesor universitario investigador con más de 22 años de experiencia en educación superior, investigación aplicada y formación de estudiantes en matemáticas, probabilidad, estadística, métodos cuantitativos y modelación matemática.</p><div class="acciones"><a class="btn" href="#investigacion">Ver investigación</a><a class="btn-sec" href="#experiencia">Trayectoria académica</a></div></div><div class="hero-visual"><div class="retrato-panel"><div class="foto"><img src="img/carlos-ernesto-martinez-rodriguez.jpg" alt="Retrato de Carlos Ernesto Martínez Rodríguez"></div></div><div class="flotante uno"><span>Área principal</span>Probabilidad, estadística y procesos estocásticos</div><div class="flotante dos"><span>Institución</span>Universidad Autónoma de la Ciudad de México</div></div></div></section>
-<section class="clara" id="perfil"><div class="contenedor"><div class="encabezado"><span class="tag">Perfil académico</span><h2>Formación cuantitativa, docencia e investigación aplicada</h2><p>Cuenta con formación avanzada en Probabilidad, Estadística y Series de Tiempo, complementada con estudios doctorales en Probabilidad en la UAM Iztapalapa, con énfasis en Procesos Estocásticos, Procesos de Markov, Teoría de Colas y Sistemas de Visitas.</p></div><div class="grid3"><article class="card"><div class="numero">01</div><h3>Doctorado</h3><p>Estudios de doctorado en Probabilidad, Universidad Autónoma Metropolitana, Unidad Iztapalapa.</p></article><article class="card"><div class="numero">02</div><h3>Maestría</h3><p>Maestría en Ciencias Matemáticas, IIMAS, Universidad Nacional Autónoma de México.</p></article><article class="card"><div class="numero">03</div><h3>Licenciatura</h3><p>Licenciatura en Matemáticas Aplicadas, Universidad Autónoma de Querétaro.</p></article></div></div></section>
-<section id="areas"><div class="contenedor"><div class="encabezado"><span class="tag">Áreas de especialización</span><h2>Probabilidad, modelación y analítica cuantitativa</h2></div><div class="chips"><span class="chip">Probabilidad</span><span class="chip">Estadística</span><span class="chip">Procesos Estocásticos</span><span class="chip">Procesos de Markov</span><span class="chip">Teoría de Colas</span><span class="chip">Polling Systems</span><span class="chip">Modelación Matemática</span><span class="chip">Simulación</span><span class="chip">Métodos Cuantitativos</span><span class="chip">Series de Tiempo</span><span class="chip">Analítica Cuantitativa</span><span class="chip">Análisis Biomédicos con R</span></div></div></section>
-<section class="clara" id="experiencia"><div class="contenedor"><div class="encabezado"><span class="tag">Trayectoria</span><h2>Experiencia académica y profesional</h2></div><div class="grid2"><article class="card"><h3>Experiencia académica</h3><div class="timeline"><div class="item"><time>2003–2026</time><div><h4>Profesor Investigador de Tiempo Completo</h4><p>Universidad Autónoma de la Ciudad de México. Docencia, desarrollo de materiales, investigación interdisciplinaria, evaluación institucional, análisis cuantitativo y producción científica y técnica.</p></div></div></div></article><article class="card"><h3>Experiencia profesional</h3><div class="timeline"><div class="item"><time>2025–actualidad</time><div><h4>Fundador y Director Académico</h4><p>Analítica Aplicada MX. Diseño de programas especializados, contenidos con R y Python, y materiales técnicos mediante Sweave, R Markdown y LaTeX.</p></div></div><div class="item"><time>2000–2001</time><div><h4>Ingeniero de Desarrollo</h4><p>CIATEQ A.C. Desarrollo y validación de modelos matemáticos para estimación de incertidumbre en procesos industriales y sistemas de instrumentación.</p></div></div></div></article></div></div></section>
-<section id="docencia"><div class="contenedor"><div class="encabezado"><span class="tag">Docencia</span><h2>Asignaturas impartidas</h2></div><div class="grid3"><ul class="lista"><li>Matemáticas</li><li>Cálculo Diferencial</li><li>Cálculo Integral</li><li>Ecuaciones Diferenciales</li><li>Álgebra Lineal</li></ul><ul class="lista"><li>Métodos Numéricos</li><li>Probabilidad</li><li>Estadística</li><li>Estadística Descriptiva</li><li>Inferencia Estadística</li></ul><ul class="lista"><li>Bioestadística</li><li>Optimización I</li><li>Métodos Cuantitativos</li><li>Simulación</li><li>Procesos Estocásticos</li></ul></div></div></section>
-<section class="clara" id="libro"><div class="contenedor"><div class="encabezado"><span class="tag">Publicación de divulgación</span><h2>Libro publicado en Amazon</h2></div><div class="grid2"><article class="card course-card"><span class="course-badge">Libro publicado en Amazon</span><h3>Semblanzas de Gigantes Científicos</h3><p>Un recorrido por la vida, ideas y contribuciones de científicos y matemáticos que transformaron nuestra comprensión del mundo moderno. Una obra de divulgación científica pensada para estudiantes, docentes y personas interesadas en la historia de la ciencia.</p><div class="course-actions"><a href="https://www.amazon.com.mx/Semblanzas-Gigantes-Cient%C3%ADficos-evoluci%C3%B3n-ciencia/dp/B0GHCWLHPC/" class="btn-card" target="_blank" rel="noopener noreferrer">Comprar en Amazon</a><a href="#semblanzas" class="btn-card secondary">Ver semblanzas</a></div></article><article class="card"><h3>Divulgación científica</h3><p>El libro amplía el trabajo de producción de materiales académicos y de divulgación desarrollado en torno a la historia de la ciencia, las matemáticas y sus protagonistas.</p></article></div></div></section>
-<section id="investigacion" class="oscura"><div class="contenedor"><div class="encabezado"><span class="tag">Investigación científica</span><h2>Producción científica y materiales académicos</h2><p>Procesos estocásticos, teoría de colas, cadenas de Markov, regresión logística, probabilidad aplicada y modelación matemática.</p></div><div class="grid3">
-<article class="card course-card"><span class="course-badge">arXiv · Procesos Estocásticos</span><h3>Procesos Regenerativos y de Renovación: Revisión</h3><p>Introducción a procesos regenerativos y de renovación, fundamentos probabilísticos y aplicaciones en modelación estocástica.</p><div class="course-actions"><a href="https://arxiv.org/pdf/2408.01012" class="btn-card" target="_blank" rel="noopener noreferrer">Leer artículo</a></div></article>
-<article class="card course-card"><span class="course-badge">arXiv · Teoría de Colas</span><h3>Notas sobre Teoría de Colas y Algunas Aplicaciones</h3><p>Introducción a sistemas de espera, procesos de llegada y aplicaciones reales de teoría de colas.</p><div class="course-actions"><a href="https://arxiv.org/pdf/2409.10735" class="btn-card" target="_blank" rel="noopener noreferrer">Leer artículo</a></div></article>
-<article class="card course-card"><span class="course-badge">arXiv · Cadenas de Markov</span><h3>A Markov Chain Model for COVID-19 in Mexico City</h3><p>Modelación epidemiológica mediante cadenas de Markov aplicada al comportamiento de COVID-19 en CDMX.</p><div class="course-actions"><a href="https://arxiv.org/pdf/2110.13816" class="btn-card" target="_blank" rel="noopener noreferrer">Leer artículo</a></div></article>
-<article class="card course-card"><span class="course-badge">Academia.edu · Procesos de Markov</span><h3>Teoría General de Procesos de Markov</h3><p>Fundamentos probabilísticos y estructura matemática de procesos de Markov discretos y continuos.</p><div class="course-actions"><a href="https://www.academia.edu/8043625/Teor%C3%ADa_General_de_Procesos_de_Markov" class="btn-card" target="_blank" rel="noopener noreferrer">Leer material</a></div></article>
-<article class="card course-card"><span class="course-badge">Academia.edu · Ciencia de Datos</span><h3>Notas sobre Regresión Logística</h3><p>Fundamentos, implementación y aplicaciones de regresión logística en análisis de datos y modelación estadística.</p><div class="course-actions"><a href="https://www.academia.edu/143430074/Notas_sobre_Regresi%C3%B3n_Log%C3%ADstica_Fundamentos_Implementaci%C3%B3n_y_Aplicaciones" class="btn-card" target="_blank" rel="noopener noreferrer">Leer material</a></div></article>
-<article class="card course-card"><span class="course-badge">Academia.edu · Teoría de Colas</span><h3>Introducción a los Sistemas de Visitas</h3><p>Material introductorio sobre sistemas de visitas y aplicaciones en procesos de servicio y teoría de colas.</p><div class="course-actions"><a href="https://www.academia.edu/8043652/Introducci%C3%B3n_a_los_Sistemas_de_Visitas" class="btn-card" target="_blank" rel="noopener noreferrer">Leer material</a></div></article>
-</div><div class="course-actions research-links"><a href="https://orcid.org/0000-0003-3848-9369" class="btn-card secondary light" target="_blank" rel="noopener noreferrer">Ver ORCID</a><a href="http://arxiv.org/a/martinezrodriguez_c_1" class="btn-card secondary light" target="_blank" rel="noopener noreferrer">Ver perfil arXiv</a></div></div></section>
-<section class="clara" id="herramientas"><div class="contenedor"><div class="encabezado"><span class="tag">Formación y herramientas</span><h2>Actualización profesional y trabajo computacional</h2></div><div class="grid2"><article class="card"><h3>Formación complementaria</h3><ul class="lista"><li>Ciencia de Datos con Python — UNAM, 2025.</li><li>Probabilidad, Estadística y Machine Learning con Python — UNAM, 2025.</li><li>Expresión diferencial mediante RNA-seq con R — Winter Genomics, 2023.</li><li>Principios de Programación en Python — Winter Genomics, 2023.</li></ul></article><article class="card"><h3>Herramientas computacionales</h3><div class="chips"><span class="chip">R</span><span class="chip">Python</span><span class="chip">Sweave</span><span class="chip">R Markdown</span><span class="chip">LaTeX</span><span class="chip">Linux</span><span class="chip">GitHub</span><span class="chip">HPC</span><span class="chip">Moodle</span><span class="chip">Google Classroom</span><span class="chip">Teams</span><span class="chip">Zoom</span></div></article></div></div></section>
-<section id="contacto"><div class="contenedor"><div class="cta"><span class="tag">Contacto académico</span><h2>Docencia, investigación y colaboración</h2><p>Profesor universitario investigador y fundador de Analítica Aplicada MX.</p><div class="acciones"><a class="btn" href="mailto:cemroder@gmail.com">cemroder@gmail.com</a><a class="btn-sec" href="https://analiticaaplicada.mx" target="_blank" rel="noopener noreferrer">Analítica Aplicada</a><a class="btn-sec" href="https://github.com/ProfTodoMundo" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></div></section>
-</main><footer><div class="contenedor footer-grid"><div><strong>Carlos Ernesto Martínez Rodríguez</strong><p>Profesor Universitario Investigador</p></div><div><strong>Impulsa Académico</strong><p>Una iniciativa de Analítica Aplicada · 2026</p></div></div></footer>
-</body></html>
+    <header class="barra">
+        <div class="contenedor nav"><a class="marca" href="#inicio"><span class="sello">CM</span><span><span
+                        class="marca-nombre">Carlos Ernesto Martínez Rodríguez</span><small>Impulsa Académico</small></span></a>
+            <nav class="menu"><a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a
+                    href="#docencia">Docencia</a><a href="#libro">Libro</a><a href="#investigacion">Investigación</a><a
+                    href="#contacto">Contacto</a></nav><a class="btn" href="#contacto">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="contenedor hero-grid">
+                <div><span class="tag">Probabilidad · Estadística · Modelación matemática</span>
+                    <h1>Carlos Ernesto <span>Martínez Rodríguez</span></h1>
+                    <p>Profesor universitario investigador con más de 22 años de experiencia en educación superior,
+                        investigación aplicada y formación de estudiantes en matemáticas, probabilidad, estadística,
+                        métodos cuantitativos y modelación matemática.</p>
+                    <div class="acciones"><a class="btn" href="#investigacion">Ver investigación</a><a class="btn-sec"
+                            href="#experiencia">Trayectoria académica</a></div>
+                </div>
+                <div class="hero-visual">
+                    <div class="retrato-panel">
+                        <div class="foto"><img src="img/carlos-ernesto-martinez-rodriguez.jpg"
+                                alt="Retrato de Carlos Ernesto Martínez Rodríguez"></div>
+                    </div>
+                    <div class="flotante uno"><span>Área principal</span>Probabilidad, estadística y procesos
+                        estocásticos</div>
+                    <div class="flotante dos"><span>Institución</span> Pendiente</div>
+                </div>
+            </div>
+        </section>
+        <section class="clara" id="perfil">
+            <div class="contenedor">
+                <div class="encabezado"><span class="tag">Perfil académico</span>
+                    <h2>Formación cuantitativa, docencia e investigación aplicada</h2>
+                    <p>Cuenta con formación avanzada en Probabilidad, Estadística y Series de Tiempo, complementada con
+                        estudios doctorales en Probabilidad en la UAM Iztapalapa, con énfasis en Procesos Estocásticos,
+                        Procesos de Markov, Teoría de Colas y Sistemas de Visitas.</p>
+                </div>
+                <div class="grid3">
+                    <article class="card">
+                        <div class="numero">01</div>
+                        <h3>Doctorado</h3>
+                        <p>Estudios de doctorado en Probabilidad, Universidad Autónoma Metropolitana, Unidad Iztapalapa.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <div class="numero">02</div>
+                        <h3>Maestría</h3>
+                        <p>Maestría en Ciencias Matemáticas, IIMAS, Universidad Nacional Autónoma de México.</p>
+                    </article>
+                    <article class="card">
+                        <div class="numero">03</div>
+                        <h3>Licenciatura</h3>
+                        <p>Licenciatura en Matemáticas Aplicadas, Universidad Autónoma de Querétaro.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="areas">
+            <div class="contenedor">
+                <div class="encabezado"><span class="tag">Áreas de especialización</span>
+                    <h2>Probabilidad, modelación y analítica cuantitativa</h2>
+                </div>
+                <div class="chips"><span class="chip">Probabilidad</span><span class="chip">Estadística</span><span
+                        class="chip">Procesos Estocásticos</span><span class="chip">Procesos de Markov</span><span
+                        class="chip">Teoría de Colas</span><span class="chip">Polling Systems</span><span
+                        class="chip">Modelación Matemática</span><span class="chip">Simulación</span><span
+                        class="chip">Métodos Cuantitativos</span><span class="chip">Series de Tiempo</span><span
+                        class="chip">Analítica Cuantitativa</span><span class="chip">Análisis Biomédicos con R</span>
+                </div>
+            </div>
+        </section>
+        <section class="clara" id="experiencia">
+            <div class="contenedor">
+                <div class="encabezado"><span class="tag">Trayectoria</span>
+                    <h2>Experiencia académica y profesional</h2>
+                </div>
+                <div class="grid2">
+                    <article class="card">
+                        <h3>Experiencia académica</h3>
+                        <div class="timeline">
+                            <div class="item"><time>2003–2026</time>
+                                <div>
+                                    <h4>Profesor Investigador de Tiempo Completo</h4>
+                                    <p>Universidad Autónoma de la Ciudad de México. Docencia, desarrollo de materiales,
+                                        investigación interdisciplinaria, evaluación institucional, análisis
+                                        cuantitativo y producción científica y técnica.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Experiencia profesional</h3>
+                        <div class="timeline">
+                            <div class="item"><time>Marzo 2026–actualidad</time>
+                                <div>
+                                    <h4>Fundador y Director Académico</h4>
+                                    <p>Analítica Aplicada MX. Diseño de programas especializados, contenidos con R y
+                                        Python, y materiales técnicos mediante Sweave, R Markdown y LaTeX.</p>
+                                </div>
+                            </div>
+                            <div class="item"><time>2000–2001</time>
+                                <div>
+                                    <h4>Ingeniero de Desarrollo</h4>
+                                    <p>CIATEQ A.C. Desarrollo y validación de modelos matemáticos para estimación de
+                                        incertidumbre en procesos industriales y sistemas de instrumentación.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="docencia">
+            <div class="contenedor">
+                <div class="encabezado"><span class="tag">Docencia</span>
+                    <h2>Asignaturas impartidas</h2>
+                </div>
+                <div class="grid3">
+                    <ul class="lista">
+                        <li>Matemáticas</li>
+                        <li>Cálculo Diferencial</li>
+                        <li>Cálculo Integral</li>
+                        <li>Ecuaciones Diferenciales</li>
+                        <li>Álgebra Lineal</li>
+                    </ul>
+                    <ul class="lista">
+                        <li>Métodos Numéricos</li>
+                        <li>Probabilidad</li>
+                        <li>Estadística</li>
+                        <li>Estadística Descriptiva</li>
+                        <li>Inferencia Estadística</li>
+                    </ul>
+                    <ul class="lista">
+                        <li>Bioestadística</li>
+                        <li>Optimización I</li>
+                        <li>Simulación</li>
+                        <li>Procesos Estocásticos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="clara" id="libro">
+            <div class="contenedor">
+                <div class="encabezado"><span class="tag">Publicación de divulgación</span>
+                    <h2>Libro publicado en Amazon</h2>
+                </div>
+                <div class="grid2">
+                    <article class="card course-card"><span class="course-badge">Libro publicado en Amazon</span>
+                        <h3>Semblanzas de Gigantes Científicos</h3>
+                        <p>Un recorrido por la vida, ideas y contribuciones de científicos y matemáticos que
+                            transformaron nuestra comprensión del mundo moderno. Una obra de divulgación científica
+                            pensada para estudiantes, docentes y personas interesadas en la historia de la ciencia.</p>
+                        <div class="course-actions"><a
+                                href="https://www.amazon.com.mx/Semblanzas-Gigantes-Cient%C3%ADficos-evoluci%C3%B3n-ciencia/dp/B0GHCWLHPC/"
+                                class="btn-card" target="_blank" rel="noopener noreferrer">Comprar en Amazon</a><a
+                                href="#semblanzas" class="btn-card secondary">Ver semblanzas</a></div>
+                    </article>
+                    <article class="card">
+                        <h3>Divulgación científica</h3>
+                        <p>El libro amplía el trabajo de producción de materiales académicos y de divulgación
+                            desarrollado en torno a la historia de la ciencia, las matemáticas y sus protagonistas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="investigacion" class="oscura">
+            <div class="contenedor">
+                <div class="encabezado"><span class="tag">Investigación científica</span>
+                    <h2>Producción científica y materiales académicos</h2>
+                    <p>Procesos estocásticos, teoría de colas, cadenas de Markov, regresión logística, probabilidad
+                        aplicada y modelación matemática.</p>
+                </div>
+                <div class="grid3">
+                    <article class="card course-card"><span class="course-badge">arXiv · Procesos Estocásticos</span>
+                        <h3>Procesos Regenerativos y de Renovación: Revisión</h3>
+                        <p>Introducción a procesos regenerativos y de renovación, fundamentos probabilísticos y
+                            aplicaciones en modelación estocástica.</p>
+                        <div class="course-actions"><a href="https://arxiv.org/pdf/2408.01012" class="btn-card"
+                                target="_blank" rel="noopener noreferrer">Leer artículo</a></div>
+                    </article>
+                    <article class="card course-card"><span class="course-badge">arXiv · Teoría de Colas</span>
+                        <h3>Notas sobre Teoría de Colas y Algunas Aplicaciones</h3>
+                        <p>Introducción a sistemas de espera, procesos de llegada y aplicaciones reales de teoría de
+                            colas.</p>
+                        <div class="course-actions"><a href="https://arxiv.org/pdf/2409.10735" class="btn-card"
+                                target="_blank" rel="noopener noreferrer">Leer artículo</a></div>
+                    </article>
+                    <article class="card course-card"><span class="course-badge">arXiv · Cadenas de Markov</span>
+                        <h3>A Markov Chain Model for COVID-19 in Mexico City</h3>
+                        <p>Modelación epidemiológica mediante cadenas de Markov aplicada al comportamiento de COVID-19
+                            en CDMX.</p>
+                        <div class="course-actions"><a href="https://arxiv.org/pdf/2110.13816" class="btn-card"
+                                target="_blank" rel="noopener noreferrer">Leer artículo</a></div>
+                    </article>
+                    <article class="card course-card"><span class="course-badge">Academia.edu · Procesos de
+                            Markov</span>
+                        <h3>Teoría General de Procesos de Markov</h3>
+                        <p>Fundamentos probabilísticos y estructura matemática de procesos de Markov discretos y
+                            continuos.</p>
+                        <div class="course-actions"><a
+                                href="https://www.academia.edu/8043625/Teor%C3%ADa_General_de_Procesos_de_Markov"
+                                class="btn-card" target="_blank" rel="noopener noreferrer">Leer material</a></div>
+                    </article>
+                    <article class="card course-card"><span class="course-badge">Academia.edu · Ciencia de Datos</span>
+                        <h3>Notas sobre Regresión Logística</h3>
+                        <p>Fundamentos, implementación y aplicaciones de regresión logística en análisis de datos y
+                            modelación estadística.</p>
+                        <div class="course-actions"><a
+                                href="https://www.academia.edu/143430074/Notas_sobre_Regresi%C3%B3n_Log%C3%ADstica_Fundamentos_Implementaci%C3%B3n_y_Aplicaciones"
+                                class="btn-card" target="_blank" rel="noopener noreferrer">Leer material</a></div>
+                    </article>
+                    <article class="card course-card"><span class="course-badge">Academia.edu · Teoría de Colas</span>
+                        <h3>Introducción a los Sistemas de Visitas</h3>
+                        <p>Material introductorio sobre sistemas de visitas y aplicaciones en procesos de servicio y
+                            teoría de colas.</p>
+                        <div class="course-actions"><a
+                                href="https://www.academia.edu/8043652/Introducci%C3%B3n_a_los_Sistemas_de_Visitas"
+                                class="btn-card" target="_blank" rel="noopener noreferrer">Leer material</a></div>
+                    </article>
+                </div>
+                <div class="course-actions research-links"><a href="https://orcid.org/0000-0003-3848-9369"
+                        class="btn-card secondary light" target="_blank" rel="noopener noreferrer">Ver ORCID</a><a
+                        href="http://arxiv.org/a/martinezrodriguez_c_1" class="btn-card secondary light" target="_blank"
+                        rel="noopener noreferrer">Ver perfil arXiv</a></div>
+            </div>
+        </section>
+        <section class="clara" id="herramientas">
+            <div class="contenedor">
+                <div class="encabezado"><span class="tag">Formación y herramientas</span>
+                    <h2>Actualización profesional y trabajo computacional</h2>
+                </div>
+                <div class="grid2">
+                    <article class="card">
+                        <h3>Formación complementaria</h3>
+                        <ul class="lista">
+                            <li>Ciencia de Datos con Python — UNAM, 2025.</li>
+                            <li>Probabilidad, Estadística y Machine Learning con Python — UNAM, 2025.</li>
+                            <li>Expresión diferencial mediante RNA-seq con R — Winter Genomics, 2023.</li>
+                            <li>Principios de Programación en Python — Winter Genomics, 2023.</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Herramientas computacionales</h3>
+                        <div class="chips"><span class="chip">R</span><span class="chip">Python</span><span
+                                class="chip">Sweave</span><span class="chip">R Markdown</span><span
+                                class="chip">LaTeX</span><span class="chip">Linux</span><span
+                                class="chip">GitHub</span><span class="chip">HPC</span><span
+                                class="chip">Moodle</span><span class="chip">Google Classroom</span><span
+                                class="chip">Teams</span><span class="chip">Zoom</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="contenedor">
+                <div class="cta"><span class="tag">Contacto académico</span>
+                    <h2>Docencia, investigación y colaboración</h2>
+                    <p>Profesor universitario investigador y fundador de Analítica Aplicada MX.</p>
+                    <div class="acciones"><a class="btn" href="mailto:cemroder@gmail.com">cemroder@gmail.com</a><a
+                            class="btn-sec" href="https://analiticaaplicada.mx" target="_blank"
+                            rel="noopener noreferrer">Analítica Aplicada</a><a class="btn-sec"
+                            href="https://github.com/ProfTodoMundo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor footer-grid">
+            <div><strong>Carlos Ernesto Martínez Rodríguez</strong>
+                <p>Profesor Universitario Investigador</p>
+            </div>
+            <div><strong>Impulsa Académico</strong>
+                <p>Una iniciativa de Analítica Aplicada · 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
