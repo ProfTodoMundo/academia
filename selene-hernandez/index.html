@@ -61,6 +61,65 @@
     @media(max-width:1080px){.menu{display:none}}
     @media(max-width:980px){.hero-grid,.perfil{grid-template-columns:1fr}.hero-visual{min-height:560px;max-width:620px;width:100%;margin:0 auto}.beneficios,.idiomas-grid,.grupos-grid,.galeria-futura{grid-template-columns:1fr}.timeline-item{grid-template-columns:1fr;gap:.3rem}}
     @media(max-width:620px){.contenedor{width:min(calc(100% - 1.25rem),var(--ancho))}.navegacion .boton{display:none}.hero{padding:4.2rem 0}h1{font-size:clamp(3.2rem,15vw,4.6rem)}.hero-visual{min-height:470px}.retrato-panel{inset:0}.tarjeta-flotante{max-width:180px;font-size:.8rem;padding:.85rem}.tarjeta-flotante.uno{left:-.2rem}.tarjeta-flotante.dos{right:-.2rem}section{padding:4rem 0}.cta{padding:2.2rem 1.25rem}}
+  
+    /* Easter egg: tigre saltarín oculto */
+    .tigre-easter-egg{
+      position:fixed;
+      left:50%;
+      bottom:-220px;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      gap:.8rem;
+      pointer-events:none;
+      transform:translateX(-50%);
+      opacity:0;
+    }
+    .tigre-easter-egg .tigre{
+      font-size:7rem;
+      line-height:1;
+      filter:drop-shadow(0 14px 18px rgba(22,50,79,.22));
+    }
+    .tigre-easter-egg .mensaje{
+      background:var(--superficie);
+      color:var(--oxford-oscuro);
+      border:1px solid var(--marfil);
+      border-radius:18px 18px 18px 5px;
+      padding:.85rem 1rem;
+      font-weight:700;
+      box-shadow:var(--sombra-suave);
+      white-space:nowrap;
+    }
+    .tigre-easter-egg.activo{
+      animation:salto-tigre 3.2s ease-in-out forwards;
+    }
+    @keyframes salto-tigre{
+      0%{bottom:-220px;opacity:0;transform:translateX(-50%) rotate(-8deg)}
+      12%{bottom:70px;opacity:1;transform:translateX(-50%) rotate(7deg)}
+      28%{bottom:20px;transform:translateX(-50%) rotate(-5deg)}
+      44%{bottom:105px;transform:translateX(-50%) rotate(6deg)}
+      60%{bottom:35px;transform:translateX(-50%) rotate(-3deg)}
+      76%{bottom:85px;transform:translateX(-50%) rotate(3deg)}
+      88%{bottom:45px;opacity:1;transform:translateX(-50%) rotate(0)}
+      100%{bottom:-220px;opacity:0;transform:translateX(-50%) rotate(0)}
+    }
+    .marca-sello{cursor:pointer;user-select:none}
+    @media(max-width:620px){
+      .tigre-easter-egg{gap:.45rem}
+      .tigre-easter-egg .tigre{font-size:5rem}
+      .tigre-easter-egg .mensaje{font-size:.82rem;padding:.7rem .8rem}
+    }
+    @media(prefers-reduced-motion:reduce){
+      .tigre-easter-egg.activo{
+        animation:mostrar-tigre-suave 2.6s ease forwards;
+      }
+      @keyframes mostrar-tigre-suave{
+        0%{bottom:30px;opacity:0}
+        15%,85%{bottom:30px;opacity:1}
+        100%{bottom:30px;opacity:0}
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -267,5 +326,44 @@
 </main>
 
 <footer><div class="contenedor footer-grid"><div><strong>Dra. María de Jesús Selene Hernández Gómez</strong><p>Universidad Autónoma de Querétaro | Campus Aeropuerto</p></div><div><strong>Impulsa Académico</strong><p>Una iniciativa de Analítica Aplicada · 2026</p></div></div></footer>
+
+<!-- Easter egg oculto: aparece al hacer cinco clics sobre el sello "SH" -->
+<div id="tigre-easter-egg" class="tigre-easter-egg" aria-hidden="true">
+  <div class="tigre" aria-hidden="true">🐯</div>
+  <div class="mensaje">¡Hola, Dra. Selene!</div>
+</div>
+
+<script>
+  (() => {
+    const sello = document.querySelector(".marca-sello");
+    const tigre = document.getElementById("tigre-easter-egg");
+    let clics = 0;
+    let reinicio;
+
+    sello.addEventListener("click", (evento) => {
+      evento.preventDefault();
+      evento.stopPropagation();
+
+      clics += 1;
+      clearTimeout(reinicio);
+
+      if (clics >= 5) {
+        clics = 0;
+        tigre.classList.remove("activo");
+        void tigre.offsetWidth;
+        tigre.classList.add("activo");
+      } else {
+        reinicio = setTimeout(() => {
+          clics = 0;
+        }, 1800);
+      }
+    });
+
+    tigre.addEventListener("animationend", () => {
+      tigre.classList.remove("activo");
+    });
+  })();
+</script>
+
 </body>
 </html>
